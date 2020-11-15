@@ -1,7 +1,11 @@
+body{
+  background-image: -webkit-radial-gradient(blue, purple, yellow);
+}
+
 .centered-wrapper{
     position: relative;
     text-align: center;
-    top: 100px;
+    top: 15px;
   }
   
   
@@ -20,26 +24,28 @@
   
   .left-ear{
     position: relative;
-    top: 240px;
+    top: 245px;
     left: -62px;
     width: 250px;
     height: 200px;
-    border: solid 2px purple;
+    border: solid 2px black;
     background-color: purple;
     border-radius: 45%;
     transform: rotate(155deg);
+    z-index: -1;
   }
   
   .right-ear{
     position: relative;
     left: 250px;
-    top: 60px;
+    top: 65px;
     width: 250px;
     height: 200px;
-    border: solid 2px purple;
+    border: solid 2px black;
     background-color: purple;
     border-radius: 47%;
     transform: rotate(210deg);
+    z-index: -1;
   }
   
   .facetop1{
@@ -161,6 +167,102 @@
 
     
 }
+
+#heart {
+  position: relative; 
+  width:100px; 
+  height:90px;
+  margin-top: 50px; /* leave some space above */
+  top: 530px;
+  left: 15px;
+  z-index: 2;
+}
+
+#heart:before, #heart:after {
+  position: absolute; 
+  content: ""; 
+  left: 50px; 
+  top: 0; 
+  width: 52px; 
+  height: 80px; 
+  background: red; /* assign a nice red color */
+  border-radius: 50px 50px 0 0; /* make the top edge round */ 
+}
+
+#heart:before {
+  -webkit-transform: rotate(-45deg); /* 45 degrees rotation counter clockwise */
+     -moz-transform: rotate(-45deg); 
+      -ms-transform: rotate(-45deg); 
+       -o-transform: rotate(-45deg); 
+          transform: rotate(-45deg); 
+  -webkit-transform-origin: 0 100%; /* Rotate it around the bottom-left corner */
+     -moz-transform-origin: 0 100%; 
+      -ms-transform-origin: 0 100%; 
+       -o-transform-origin: 0 100%; 
+          transform-origin: 0 100%;
+}
+
+#heart:after { 
+  left: 0; /* placing the right part properly */
+  -webkit-transform: rotate(45deg); /* rotating 45 degrees clockwise */
+     -moz-transform: rotate(45deg); 
+      -ms-transform: rotate(45deg); 
+       -o-transform: rotate(45deg); 
+          transform: rotate(45deg); 
+  -webkit-transform-origin: 100% 100%; /* rotation is around bottom-right corner this time */
+     -moz-transform-origin: 100% 100%; 
+      -ms-transform-origin: 100% 100%; 
+       -o-transform-origin: 100% 100%; 
+          transform-origin :100% 100%; 
+} 
+
+#heart2 {
+  position: relative; 
+  width:100px; 
+  height:90px;
+  margin-top: 50px; /* leave some space above */
+  top: 420px;
+  left: 332px;
+  z-index: 2;
+}
+
+#heart2:before, #heart2:after {
+  position: absolute; 
+  content: ""; 
+  left: 50px; 
+  top: 0; 
+  width: 52px; 
+  height: 80px; 
+  background: red; /* assign a nice red color */
+  border-radius: 50px 50px 0 0; /* make the top edge round */ 
+}
+
+#heart2:before {
+  -webkit-transform: rotate(-45deg); /* 45 degrees rotation counter clockwise */
+     -moz-transform: rotate(-45deg); 
+      -ms-transform: rotate(-45deg); 
+       -o-transform: rotate(-45deg); 
+          transform: rotate(-45deg); 
+  -webkit-transform-origin: 0 100%; /* Rotate it around the bottom-left corner */
+     -moz-transform-origin: 0 100%; 
+      -ms-transform-origin: 0 100%; 
+       -o-transform-origin: 0 100%; 
+          transform-origin: 0 100%;
+}
+
+#heart2:after { 
+  left: 0; /* placing the right part properly */
+  -webkit-transform: rotate(45deg); /* rotating 45 degrees clockwise */
+     -moz-transform: rotate(45deg); 
+      -ms-transform: rotate(45deg); 
+       -o-transform: rotate(45deg); 
+          transform: rotate(45deg); 
+  -webkit-transform-origin: 100% 100%; /* rotation is around bottom-right corner this time */
+     -moz-transform-origin: 100% 100%; 
+      -ms-transform-origin: 100% 100%; 
+       -o-transform-origin: 100% 100%; 
+          transform-origin :100% 100%; 
+} 
 
   
     
